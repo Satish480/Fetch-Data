@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+ 
+}
+
+.productCard{
+    height:380px;
+    width:270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:2px solid #e5e1e1;
+    padding:10px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.productCard:hover{
+    box-shadow: 2px 2px 0px #f4f4bc;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
+}
+.card-img{
+    height:250px;
+    /* width:250px; */
+    object-fit:contain;
+}
+.title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-overflow: ellipsis;
+    width:60%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    display: inline-block;
+   
+}
+.price{
+    color:green;
+    font-size:21px;
+    padding-top:5px;
+}
+.productContainer{
+    display: flex;
+    justify-content: space-evenly;
+    gap:25px;
+    flex-wrap: wrap;
+    padding-right: 0px;
+    padding:20px 0px;
+}
+.buyContainer{
+    width: 100%;
+    display: flex;
+    padding:10px 0px 0px 0px ;
+ 
+    justify-content: space-between;
+}
+.add-to-cart{
+    padding:10px;
+    border:none;
+    background-color: rgb(192, 255, 65);
+    color:#000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.wishList{
+    font-size:20px;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+
+.buttons-container{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    padding:30px;
+    /* background-color: #f40000; */
+}
+.buttons-container button{
+    padding:10px;
+    background-color: rgb(106, 9, 216);
+    border:none;
+    width:10%;
+    cursor: pointer;
+    color:#ffff;
+    border-radius: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+ 
+}
+.buttons-container button:hover{
+    
+   background-color: rgb(10, 194, 10);
+    transition: all 1s ease-in;
+    color:#000;
+    scale:1.1;
+    
+ 
+}
+body h1{
+    text-align:center;
+    padding:20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.compare-price{
+    text-decoration: line-through;
+    color:rgb(110, 111, 111);
+    font-size:17px;
+}
+.priceContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.wishList{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    padding-top:10px;
+    background-color: brown;
+    padding:5px;
+    color:#ffffff;
+    border-radius: 5px;
+}
+.discount-price{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f40000;
+    font-size:17px;
+  
+}
